@@ -1,0 +1,189 @@
+.titleContainer{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.title{
+    height: 100%;
+    width: 33%;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.p1Name{
+    height: 100%;
+    width: 33%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p2Name{
+    height: 100%;
+    width: 33%;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.background{
+    border: solid black;
+    height: 90vh;
+    width: 100%;
+}
+.gameboard{
+    height:60%;
+    width: 100%;
+    background-image: url('https://i.gifer.com/2r4z.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.shipone,.shiptwo{
+    
+    height: 30%;
+    width: 30%;
+}
+.ship1{
+    height: 65%;
+    width: 65%;
+    transform: rotate(90deg);
+    animation: falling 3s ease-in infinite;
+}
+.ship2{
+    height: 65%;
+    width: 65%;
+    transform: rotate(180deg);
+    animation: falling 12s ease-in infinite;
+}
+.players{
+    height: 39%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    /* color: white; */
+}
+.player1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.health1, .health2, .fire1, .fire2, .acc1, .acc2{
+    height: 100%;
+    width: 33%;
+    display: block;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.tophealth,.tophealth2,.tfire,.tfire2,.topacc,.topacc2{
+    padding: 1em;
+    height:50%;
+    width: 80%;
+    text-align: center;
+}
+.bhealth,.bhealth2,.bfire,.bfire2,.botacc,.botacc2{
+    padding: 1em;
+    height:20%;
+    width: 80%;
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+}
+
+.player2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.btnContainer{
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p1btn,.p2btn,.startbtn{
+    height: 100%;
+    width:33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.att1{
+        color: #fff;
+        padding: 15px 25px;
+        border-radius: 100px;
+        background-color: #4C43CD;
+        background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+        font-size: 16px;
+      
+        border: 0;
+}
+.att2{
+        color: #fff;
+        padding: 15px 25px;
+        border-radius: 100px;
+        background-color: red;
+        background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+        font-size: 16px;
+        border: 0;
+}
+
+.start,.resetbtn{
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 100px;
+    background-color: gray;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+}
+.newShip1{
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 100px;
+    background-color: gray;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+}
+.startbtn{
+    display: flex;
+    justify-items: space-around;
+
+}
+@keyframes falling {
+    0%{
+        
+        margin-top:0%;
+    }
+    50%{
+        margin-top:40%;
+        
+    }
+    100%{
+        margin-top:0%;
+    }
+  }
+.start{
+  color: #c8a913;
+}
